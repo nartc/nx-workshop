@@ -12,7 +12,7 @@ import { StoreUiSharedModule } from '@bg-hoard/store/ui-shared';
     BrowserModule,
     MatCardModule,
     StoreUiSharedModule,
-    RouterModule.forRoot([], { initialNavigation: 'enabled' }),
+    RouterModule.forRoot([], { initialNavigation: 'enabled', relativeLinkResolution: 'legacy' }),
   ],
   providers: [],
   bootstrap: [AppComponent],
