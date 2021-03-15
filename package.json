@@ -29,7 +29,7 @@
   "dependencies": {},
   "devDependencies": {
     "@nrwl/cli": "10.3.3",
-    "@nrwl/workspace": "10.3.3",
+    "@nrwl/workspace": "11.5.1",
     "@types/node": "~8.9.4",
     "dotenv": "6.2.0",
     "eslint": "^7.13.0",
