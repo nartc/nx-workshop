@@ -25,7 +25,7 @@ import { environment } from '../environments/environment';
             ),
         },
       ],
-      { initialNavigation: 'enabled' }
+      { initialNavigation: 'enabled', relativeLinkResolution: 'legacy' }
     ),
   ],
   providers: [
