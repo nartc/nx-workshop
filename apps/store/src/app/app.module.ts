@@ -22,7 +22,7 @@ import { StoreUiSharedModule } from '@bg-hoard/store/ui-shared';
             ),
         },
       ],
-      { initialNavigation: 'enabled' }
+      { initialNavigation: 'enabled', relativeLinkResolution: 'legacy' }
     ),
   ],
   providers: [],
