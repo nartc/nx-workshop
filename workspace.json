@@ -17,8 +17,13 @@
             "polyfills": "apps/store/src/polyfills.ts",
             "tsConfig": "apps/store/tsconfig.app.json",
             "aot": true,
-            "assets": ["apps/store/src/favicon.ico", "apps/store/src/assets"],
-            "styles": ["apps/store/src/styles.css"],
+            "assets": [
+              "apps/store/src/favicon.ico",
+              "apps/store/src/assets"
+            ],
+            "styles": [
+              "apps/store/src/styles.css"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -32,7 +37,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -50,7 +54,10 @@
                 }
               ]
             }
-          }
+          },
+          "outputs": [
+            "{options.outputPath}"
+          ]
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
@@ -77,7 +84,10 @@
               "apps/store/tsconfig.spec.json",
               "apps/store/tsconfig.editor.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/store/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/store/**/*"
+            ]
           }
         },
         "test": {
@@ -85,7 +95,10 @@
           "options": {
             "jestConfig": "apps/store/jest.config.js",
             "passWithNoTests": true
-          }
+          },
+          "outputs": [
+            "coverage/apps/store"
+          ]
         }
       }
     },
@@ -110,8 +123,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/store-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/store-e2e/**/*"]
+            "tsConfig": [
+              "apps/store-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/store-e2e/**/*"
+            ]
           }
         }
       }

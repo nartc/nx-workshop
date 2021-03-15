@@ -10,7 +10,7 @@ import { MatCardModule } from '@angular/material/card';
   imports: [
     BrowserModule,
     MatCardModule,
-    RouterModule.forRoot([], { initialNavigation: 'enabled' }),
+    RouterModule.forRoot([], { initialNavigation: 'enabled', relativeLinkResolution: 'legacy' }),
   ],
   providers: [],
   bootstrap: [AppComponent],
